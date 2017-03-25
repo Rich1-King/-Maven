@@ -1,0 +1,22 @@
+{
+  "groups": [{
+    "name": "",
+    "type": "com.boot.model.vo.DataModel",
+    "sourceType": "com.boot.config.DataConfig",
+    "sourceMethod": "getDataModel()"
+  }],
+  "properties": [
+    {
+      "name": "age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.boot.model.vo.DataModel",
+      "defaultValue": 0
+    },
+    {
+      "name": "sex",
+      "type": "java.lang.String",
+      "sourceType": "com.boot.model.vo.DataModel"
+    }
+  ],
+  "hints": []
+}

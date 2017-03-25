@@ -1,0 +1,12 @@
+ server:
+    port: 8080
+ spring:
+    application:
+       name: cloudservice1
+    cloud:
+       consul:
+             host: 127.0.0.1
+             port: 8500
+             discovery:
+                   healthCheckInterval: 15s
+                   instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}

@@ -1,0 +1,13 @@
+添加过滤器有两种方法。
+自定义过滤器:自定义过滤器直接继承接口Filter,然后初始化，在doFilter中写过滤条件。
+第一种方法：
+在自定义过滤器的类上面，加上Servlet的注解@WebFilter,然后再在main方法的类上加入注解@ServletComponentScan,
+能够自动扫描servlet的注解,例如（@WebFilter(servlet中的过滤器),@WebListener(servlet中的监听器)）。
+这样就可以实现自定义过滤器
+
+第二中方法：
+自定义过滤器，就当做一个普通的类。然后我们写一个配置文件，添加这个过滤器。当然添加这个过滤器需要是一个bean，允许注入到spring中。
+配置文件中配置，也有两种方法。
+第一种方法返回一个FilterRegistrationBean，这个类里面有一个属性是Filter，在注入到spring中之后，会调用它的Filter
+属性，添加过滤器的。
+第二种方法就是创建一个直接返回一个Filter的bean，这种方式比较简单。这样在spring中就可以直接用这个bean了。

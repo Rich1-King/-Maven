@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllDemo/AllDemo.iml" filepath="$PROJECT_DIR$/AllDemo/AllDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaAllMavenProduct.iml" filepath="$PROJECT_DIR$/JavaAllMavenProduct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" filepath="$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud/SpringCloud.iml" filepath="$PROJECT_DIR$/SpringCloud/SpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDemo/SpringDemo.iml" filepath="$PROJECT_DIR$/SpringDemo/SpringDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMvc/SpringMvc.iml" filepath="$PROJECT_DIR$/SpringMvc/SpringMvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaRestApiDemo/api (1) (java).iml" filepath="$PROJECT_DIR$/JavaRestApiDemo/api (1) (java).iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaRestApiDemo/SpringBootRestApi/api (2) (com.api).iml" filepath="$PROJECT_DIR$/JavaRestApiDemo/SpringBootRestApi/api (2) (com.api).iml" />
+    </modules>
+  </component>
+</project>

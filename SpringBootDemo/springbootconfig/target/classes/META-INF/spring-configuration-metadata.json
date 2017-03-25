@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.boot.model.DataModel",
+      "sourceType": "com.boot.config.DataConfig",
+      "sourceMethod": "getDataModel()"
+    },
+    {
+      "name": "",
+      "type": "com.boot.config.MailConfig",
+      "sourceType": "com.boot.config.MailConfig"
+    }
+  ],
+  "properties": [{
+    "name": "mailcount",
+    "type": "java.lang.Integer",
+    "sourceType": "com.boot.config.MailConfig",
+    "defaultValue": 0
+  }],
+  "hints": []
+}

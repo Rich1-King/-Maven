@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExportableFileTemplateSettings">
+    <internal_templates>
+      <template name="ActionScript Class.as" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="ActionScript Class with Supers.as" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="ActionScript Interface.as" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="AMD JavaScript File.js" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Gradle Build Script with wrapper.gradle" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Kotlin Class.kt" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Kotlin Enum.kt" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Kotlin Interface.kt" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="tsconfig.json.json" reformat="true" live-template-enabled="true" enabled="true" />
+    </internal_templates>
+    <default_templates>
+      <template name="JavaFXApplication.java" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="MobileResourceBundle.java" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Singleton.java" reformat="true" live-template-enabled="true" enabled="true" />
+    </default_templates>
+  </component>
+</project>
