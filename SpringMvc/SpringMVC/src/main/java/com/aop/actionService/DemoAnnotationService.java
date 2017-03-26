@@ -11,9 +11,7 @@ public class DemoAnnotationService{
     @Human(name = "hello")
     public void add()
     {
-
         System.out.println("注释添加一个");
-
     }
 
 }

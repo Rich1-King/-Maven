@@ -18,7 +18,7 @@ import java.lang.reflect.Method;
 @Component
 public class LogAspect{
 
-   @Pointcut("@annotation(com.aop.action.Human)")
+    @Pointcut("@annotation(com.aop.action.Human)")
     public void aspect(){
         System.out.println("I am anotionHumanAspect!!!");
     }

@@ -7,9 +7,21 @@
         <groupId>rich1</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-
+    <groupId>springboot</groupId>
     <artifactId>SpringBootDemo</artifactId>
-
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>Filter</module>
+        <module>interceptor</module>
+        <module>logge4jdemo</module>
+        <module>spring-boot-quartz-and-many-datasource</module>
+        <module>springbootconfig</module>
+        <module>springbootJpaAndMongoAndRedisDemo</module>
+        <module>SpringSecurity</module>
+        <module>Transaction</module>
+        <module>View</module>
+        <module>SpringBootRestApi</module>
+    </modules>
 
 </project>

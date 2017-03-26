@@ -7,9 +7,12 @@
         <groupId>rich1</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-
     <artifactId>SpringMvc</artifactId>
-
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>SpringMVC</module>
+        <module>springMvc_Mybatis</module>
+    </modules>
 
 </project>
