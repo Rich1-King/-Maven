@@ -12,7 +12,7 @@ import java.util.Properties;
 @Component
 public class PersonConfig{
 
-    private static Properties props ;
+    private static Properties props = new Properties();
 
     public PersonConfig(){
 

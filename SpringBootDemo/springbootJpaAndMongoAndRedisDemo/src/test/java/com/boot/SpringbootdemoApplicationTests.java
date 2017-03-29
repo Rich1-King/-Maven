@@ -4,11 +4,14 @@ import com.boot.model.po.Role;
 import com.boot.model.po.User;
 import com.boot.repository.RoleRepository;
 import com.boot.repository.UserRepository;
+import com.boot.service.PersonService;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,6 +24,8 @@ public class SpringbootdemoApplicationTests {
 
 	@Autowired
 	RoleRepository roleRepository;
+	@Autowired
+	PersonService personService;
 
 	//@Test
 	public void saveUser(){
@@ -41,5 +46,27 @@ public class SpringbootdemoApplicationTests {
 		userList.add(user1);
 		role.setUsers(userList);
 		roleRepository.save(role);
+	}
+
+	//@Test
+	public void testTransfaction(){
+		try{
+			personService.updateAndInsert("0001", "lisi", 30);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void updatePerson2Del(){
+		try{
+			Calendar startTime = Calendar.getInstance();
+			startTime.add(Calendar.DAY_OF_MONTH, -1);
+			Calendar endTime = Calendar.getInstance();
+			endTime.add(Calendar.DAY_OF_MONTH, 1);
+			personService.update2DelTrue(startTime, endTime);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
 	}
 }
