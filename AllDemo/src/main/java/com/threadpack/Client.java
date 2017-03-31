@@ -38,7 +38,7 @@ public class Client{
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10,14,
                 2,TimeUnit.SECONDS, new ArrayBlockingQueue(30));
         try{
-            threadPoolExecutor.invokeAll(callables);
+            threadPoolExecutor.invokeAll(callables); //invokeAll会阻塞主线程，当所有子线程运行结束，主线程才继续运行
         }catch (InterruptedException e){
             e.printStackTrace();
         }finally{
