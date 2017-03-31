@@ -120,7 +120,7 @@ public class Client{
             SayThread sayThread = new SayThread(i);
             Object futureStr = null;
             try{
-                futureStr = threadPoolExecutor.submit(sayThread).get(); //会阻塞
+                futureStr = threadPoolExecutor.submit(sayThread).get(); //会阻塞，阻塞是因为get的时候阻塞的，submit是异步的不会阻塞
                 System.out.println(Thread.currentThread().getName()+"result:"+(String)futureStr); //谁先返回谁输出
             }catch (InterruptedException e){
                 e.printStackTrace();
