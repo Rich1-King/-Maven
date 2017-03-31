@@ -42,7 +42,8 @@ public class Client{
         }catch (InterruptedException e){
             e.printStackTrace();
         }finally{
-            threadPoolExecutor.shutdown();
+            threadPoolExecutor.shutdown(); //shutdown方法并不会立即关闭线程，只是关闭线程池添加子线程，当线程池中的线程全部运行结束，才会关闭。
+                                            //shutdownnow方法会立刻杀死线程池中的所有线程
         }
     }
 
