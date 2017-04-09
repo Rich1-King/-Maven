@@ -54,9 +54,17 @@ public class Client{
         for (int i = 0; i < count; i++){
             SimpleThread simpleThread = new SimpleThread();
             simpleThread.setI(i);
-            executorService.execute(simpleThread);
+            executorService.execute(simpleThread); //异步不会阻塞主线程
         }
         executorService.shutdown();
+        System.out.println("不会阻塞主线程");
+        try{
+            // awaitTermination返回false即超时会继续循环，返回true即线程池中的线程执行完成主线程跳出循环往下执行，每隔10秒循环一次
+            while (!executorService.awaitTermination(10, TimeUnit.SECONDS));
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        System.out.println("over");
     }
 
     //创建一个简单的线程池

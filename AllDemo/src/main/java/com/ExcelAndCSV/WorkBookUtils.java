@@ -2,6 +2,9 @@ package com.ExcelAndCSV;
 
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.xssf.streaming.SXSSFSheet;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  * Created by rich1 on 2/11/17.
@@ -13,9 +16,36 @@ public class WorkBookUtils{
         return workbook;
     }
 
-    public static HSSFWorkbook addSheet(HSSFWorkbook workbook, String sheetName){
-        workbook.createSheet(sheetName);
+    public static XSSFWorkbook createXSSFWorkbook(){
+        XSSFWorkbook workbook = new XSSFWorkbook();
         return workbook;
+    }
+
+    //存储大数据量的workbook
+    public static SXSSFWorkbook createSXSSFWorkbook(int rowNum){
+        SXSSFWorkbook sxssfWorkbook = new SXSSFWorkbook(rowNum);
+        return sxssfWorkbook;
+    }
+
+    public static SXSSFWorkbook createSXSSFWorkbook(XSSFWorkbook workbook, int rowNum){
+        SXSSFWorkbook sxssfWorkbook = new SXSSFWorkbook(workbook, rowNum);
+        return sxssfWorkbook;
+    }
+
+    public static SXSSFSheet addSheet(SXSSFWorkbook workbook,String sheetName){
+        return workbook.createSheet(sheetName);
+    }
+
+    //添加sheet
+    public static SXSSFWorkbook addSheets(SXSSFWorkbook workbook, String[] sheetNames){
+        for(String sheetName : sheetNames){
+            workbook.createSheet(sheetName);
+        }
+        return workbook;
+    }
+
+    public static HSSFSheet addSheet(HSSFWorkbook workbook, String sheetName){
+        return workbook.createSheet(sheetName);
     }
 
     //添加sheet
