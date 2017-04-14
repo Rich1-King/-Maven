@@ -1,22 +1,22 @@
 {
-  "groups": [
+  "groups": [{
+    "name": "",
+    "type": "com.boot.model.DataModel",
+    "sourceType": "com.boot.config.DataConfig",
+    "sourceMethod": "getDataModel()"
+  }],
+  "properties": [
     {
-      "name": "",
-      "type": "com.boot.model.DataModel",
-      "sourceType": "com.boot.config.DataConfig",
-      "sourceMethod": "getDataModel()"
+      "name": "age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.boot.model.DataModel",
+      "defaultValue": 0
     },
     {
-      "name": "",
-      "type": "com.boot.config.MailConfig",
-      "sourceType": "com.boot.config.MailConfig"
+      "name": "sex",
+      "type": "java.lang.String",
+      "sourceType": "com.boot.model.DataModel"
     }
   ],
-  "properties": [{
-    "name": "mailcount",
-    "type": "java.lang.Integer",
-    "sourceType": "com.boot.config.MailConfig",
-    "defaultValue": 0
-  }],
   "hints": []
 }

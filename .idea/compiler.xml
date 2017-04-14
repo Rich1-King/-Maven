@@ -26,7 +26,6 @@
         <module name="api" />
         <module name="cm_service" />
         <module name="demo (1)" />
-        <module name="demo (2)" />
         <module name="filter" />
         <module name="interceptor" />
         <module name="logge4jdemo" />
@@ -39,32 +38,34 @@
         <module name="transaction" />
         <module name="view" />
       </profile>
+      <profile default="false" name="Annotation profile for rich1-all" enabled="true">
+        <sourceOutputDir name="../cloudservice2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../cloudservice2/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="demo (2)" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AllDemo" target="1.8" />
-      <module name="api" target="1.5" />
-      <module name="api (1) (java)" target="1.5" />
-      <module name="api (2) (com.api)" target="1.5" />
-      <module name="cm_service" target="1.5" />
+      <module name="api" target="1.8" />
       <module name="demo (1)" target="1.5" />
-      <module name="demo (2)" target="1.5" />
-      <module name="filter" target="1.5" />
-      <module name="interceptor" target="1.5" />
+      <module name="demo (2)" target="1.8" />
+      <module name="filter" target="1.8" />
+      <module name="interceptor" target="1.8" />
       <module name="JavaAllMavenProduct" target="1.8" />
-      <module name="logge4jdemo" target="1.5" />
-      <module name="spring-boot-quartz-and-manyDatasource" target="1.5" />
+      <module name="logge4jdemo" target="1.8" />
+      <module name="spring-boot-quartz-and-manyDatasource" target="1.8" />
       <module name="SpringBootDemo" target="1.8" />
-      <module name="springbootdemo (1)" target="1.5" />
-      <module name="springbootdemo (2)" target="1.5" />
+      <module name="springbootdemo (1)" target="1.8" />
+      <module name="springbootdemo (2)" target="1.8" />
       <module name="SpringCloud" target="1.5" />
-      <module name="SpringDemo" target="1.5" />
       <module name="SpringMvc" target="1.8" />
       <module name="springmvc" target="1.5" />
       <module name="SpringMVCDemo" target="1.7" />
-      <module name="springsecurity" target="1.5" />
-      <module name="tasktime" target="1.5" />
-      <module name="transaction" target="1.5" />
-      <module name="view" target="1.5" />
+      <module name="springsecurity" target="1.8" />
+      <module name="transaction" target="1.8" />
+      <module name="view" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

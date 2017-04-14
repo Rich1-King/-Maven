@@ -1,4 +1,6 @@
-package com.websocket;
+package com.boot.config;
+
+import org.springframework.stereotype.Component;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -8,6 +10,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * Created by sunchong on 2017/3/20.
  */
+@Component
 @ServerEndpoint("/ws/demo")
 public class WebSocketServer{
 
