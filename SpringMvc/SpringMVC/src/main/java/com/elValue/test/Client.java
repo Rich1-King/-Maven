@@ -19,18 +19,17 @@ public class Client{
         annotationConfigApplicationContext.register(Config.class);
         annotationConfigApplicationContext.refresh();
 
-        FruitService fruitService =
-        annotationConfigApplicationContext
-        .getBean(FruitService.class);
+        FruitService fruitService = annotationConfigApplicationContext.getBean(FruitService.class);
 
        /* System.out.println(fruitService.getFruit());
         System.out.println(fruitService.getFruitNum());
         System.out.println(IOUtils.toString(fruitService.getHtml()
                 .getInputStream()));*/
 
-        //FruitOtherService fruitOtherService =
-        //        annotationConfigApplicationContext.getBean(FruitOtherService
-         //               .class);
+       /* FruitOtherService fruitOtherService =
+                annotationConfigApplicationContext.getBean(FruitOtherService
+                        .class);
+                        */
 
         annotationConfigApplicationContext.close();
     }
