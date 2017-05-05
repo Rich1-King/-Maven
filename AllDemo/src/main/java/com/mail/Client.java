@@ -1,4 +1,4 @@
-package com;
+package com.mail;
 
 import javax.mail.Address;
 import javax.mail.Message;
@@ -32,7 +32,6 @@ public class Client{
         message.setSubject("test mail");
         message.setText("第一封邮件");
         message.setFrom(new InternetAddress("schongking@outlook.com"));
-
         javax.mail.Transport transport = session.getTransport();
         transport.connect(username,password);
         transport.sendMessage(message, new Address[]{new InternetAddress("970378898@qq.com")});
