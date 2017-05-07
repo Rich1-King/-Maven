@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/SpringMvc/springMvc_Mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServletDemo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,6 +17,8 @@
       <set>
         <option value="$PROJECT_DIR$/JavaRestApiDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServletDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </set>
     </option>
   </component>

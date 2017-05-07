@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AllDemo/AllDemo.iml" filepath="$PROJECT_DIR$/AllDemo/AllDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaAllMavenProduct.iml" filepath="$PROJECT_DIR$/JavaAllMavenProduct.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" filepath="$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud/SpringCloud.iml" filepath="$PROJECT_DIR$/SpringCloud/SpringCloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMvc/SpringMVC/SpringMVCDemo.iml" filepath="$PROJECT_DIR$/SpringMvc/SpringMVC/SpringMVCDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMvc/SpringMvc.iml" filepath="$PROJECT_DIR$/SpringMvc/SpringMvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServletDemo/WebServletDemo.iml" filepath="$PROJECT_DIR$/WebServletDemo/WebServletDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDemo/SpringBootRestApi/api.iml" filepath="$PROJECT_DIR$/SpringBootDemo/SpringBootRestApi/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud/cloudservice2/demo (1).iml" filepath="$PROJECT_DIR$/SpringCloud/cloudservice2/demo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud/cloudsrvice1/demo (2).iml" filepath="$PROJECT_DIR$/SpringCloud/cloudsrvice1/demo (2).iml" />

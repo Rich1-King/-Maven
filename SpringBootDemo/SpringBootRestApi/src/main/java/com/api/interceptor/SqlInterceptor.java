@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 /**
  * Created by sunchong on 2017/2/21.
  */
+//执行sql时的拦截器
 @Configuration
 public class SqlInterceptor extends EmptyInterceptor{
 

@@ -13,6 +13,8 @@
         <module>SpringBootDemo</module>
         <module>SpringCloud</module>
         <module>SpringMvc</module>
+        <module>WebServletDemo</module>
+        <module>WebServletDemo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
