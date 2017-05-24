@@ -4,25 +4,21 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <context-param>
-        <param-name>contextConfigLocation</param-name>
+        <param-name>contextConfigLocation</param-name> <!--名字默认的-->
         <param-value>classpath:/applicationContext.xml</param-value>
-    </context-param>
+    </context-param><!--为监听器ContextLoaderLister服务-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener
         </listener-class>
     </listener>
-
-
-
     <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
         <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:/dispatcher-servlet.xml</param-value>
+            <param-name>contextConfigLocation</param-name> <!--名字默认的-->
+            <param-value>classpath:/dispatcher-servlet.xml</param-value> <!--跳转器DispatcherServlet加载的配置文件-->
         </init-param>
-
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
