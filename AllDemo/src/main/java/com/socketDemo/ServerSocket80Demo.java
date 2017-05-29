@@ -18,7 +18,7 @@ public class ServerSocket80Demo{
     public static void listen(){
         try{
             System.out.println("开始监听");
-            serverSocket = new ServerSocket(8888);
+            serverSocket = new ServerSocket(80);
             Socket socket = serverSocket.accept();     //从连接请求队列中取出一个连接
             System.out.println("New connection accepted " +
                     socket.getInetAddress() + ":" + socket.getPort());
