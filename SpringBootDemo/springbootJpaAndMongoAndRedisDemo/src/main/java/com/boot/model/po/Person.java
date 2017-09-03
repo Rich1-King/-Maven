@@ -19,7 +19,7 @@ public class Person implements Serializable{
     @Column(columnDefinition = "boolean default false")
     private boolean del;
 
-    //短暂的,不会实例化，即会保存到数据库，也不会保存起来,对数据库不造成影响
+    //短暂的,不会实例化，即不会保存到数据库，也不会保存起来,对数据库不造成影响
     @Transient
     private String value;
 

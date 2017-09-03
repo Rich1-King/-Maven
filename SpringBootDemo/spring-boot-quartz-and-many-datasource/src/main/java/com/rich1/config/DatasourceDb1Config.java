@@ -25,7 +25,7 @@ import java.util.Map;
 @EnableJpaRepositories(
         entityManagerFactoryRef="entityManagerFactoryDb1",
         transactionManagerRef="transactionManagerDb1",
-        basePackages= { "com.rich1.model.po.db1" })
+        basePackages= { "com.rich1.model.po.db1" })  //repository的位置
 public class DatasourceDb1Config{
     @Autowired
     @Qualifier("db1DataSource")
@@ -41,7 +41,7 @@ public class DatasourceDb1Config{
     public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder){
         return builder.dataSource(db1Datasource)
                 .properties(getVendorProperties(db1Datasource))
-                .packages("com.rich1.model.po.db1")//数据源实体类所在包
+                .packages("com.rich1.model.po.db1")  //数据源实体类所在包
                 .persistenceUnit("db1PersistenceUnit")
                 .build();
     }
